@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  font-family:   sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.PageTitle .engTitle{
+  color: #EA7F1B;
+  font-weight: 400;
+}
+.PageTitle .zhTitle{
+  color: #45280D;
+  font-weight: 800;
+}
+.Page2Line2{
+  font-weight: 800;
+}
+
+.UserNote .NoteLine{
+  margin: 1em 0;
+}
+
+.Page6Desc{
+  padding: 1em 0 2em 0;
+  font-weight: 400;
+}
+.Page6{
+  padding-bottom: 6em;
+}
+
+.UserNote{
+  background-color: rgba(234, 127, 27, 0.1);
+  padding: 2em 5vw 2em 5vw;
+  border-radius: 8px;
+}
+
+.NoteLine label{
+  display: block;
+  color: #858585;
+}
+.NoteLine input{
+  height: 2em;
+  margin-top: 4px;
+  line-height: 2em;
+  height:  2em;
+}
+.NoteLine input,.NoteLine textarea{
+  display: block;
+  min-width: 100%;
+  border-radius: 8px;
+  border: solid 0px #fff;
+}
+.UserNote .NoteSubmit{
+  min-width: 100%;
+  color: #fff;
+  background-color: #EA7F1B;
+  text-align: center;
+  border-radius: 8px;
+  height: 2em;
+  line-height: 2em;
+}
+
+@media screen and (max-width: 768px){
+  .App-menu{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .App-menu{
+    margin: 0 auto;
+  }
+  .App-menuo ul li img{
+    z-index: 999;
+  }
+  .App-menu ul li a{
+    text-decoration: none;
+    color: #45280D;
+  }
+  .App-menu ul li a:visited, ul li a:hover{
+    color: #45280D;
+  }
+    .IndexContent{
+      border-top: solid #EA7F1B 2px;
+      margin: -80px 0;
+      background-image: url('./IndexContent.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: calc(100vw*0.36);
+    }
+
+    .IndexContentFish1{
+      position: relative;
+      bottom:  calc(-10vw*0.36);
+      left: 10vw;
+      width: calc(1vw*7.7);
+
+    }
+    .IndexContentFish2{
+      position: relative;
+      bottom: calc(-10vw*0.56);
+      left: 11vw;
+      width: calc(1vw*5.1);
+    }
+
+    
+    .Page2, .Page6{
+      margin-top: 6em;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50vw 50vw;
+    }
+    .Page2 .Page2Title, .Page2Line2, .Page2Line3, .Page2Text{
+      text-align: left;
+      padding-left: 10vw;
+    }
+    .Page2Title, .PageTitle{
+      grid-column: 1;
+      grid-row: 1;
+      font-size: 18px;
+    }
+    .Page2Line2{
+      grid-column: 1;
+      grid-row: 2;
+      font-size: 50px;
+      font-weight: 800;
+    }
+    .Page2Text{
+      grid-column: 1;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      padding: 1em;
+      padding-left: 10vw;
+    }
+    .Page2Img{
+      grid-column: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      width: 40vw;
+      background-image: url('./Page2.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: calc(100vw*0.36);
+    }
+    
+    .Page3, .page4, .Page5{
+      width: 100%;
+      height: 100vh;
+    }
+    
+    .Page3 .engTitle, .Page3 .zhTitle,
+    .Page4 .engTitle, .Page4 .zhTitle,
+    .Page5 .engTitle, .Page5 .zhTitle,
+    .Page6 .engTitle, .Page6 .zhTitle{
+      margin-left: 10vw;
+    }
+
+    .Page6 .PageTitle {
+      margin-top: 7em;
+    }
+    .Page6Line3{
+      grid-column: 1;
+      grid-row: 2;
+      padding-left: 10vw;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .Page6Desc{
+      grid-column: 1;
+      grid-row: 3;
+      padding-left: 10vw;
+    }
+    .Page6Note{
+      grid-column: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      padding: 0 5vw;
+      height: auto;
+    }
+    
+  .Page6Fish1{
+    position: relative;
+    left: 30vw;
+    top: -36px;
+    max-width: 73px;
+  }
+  .Page6Fish2{
+    position: relative;
+    left: 7vw;
+    top: 20px;
+    max-width: 114px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1043px) {
+  .App-menu{
+    width: 100%;
+  }
+.App-menu ul{
+  padding-inline-start: 0;
+  margin-block-start: 12px;
+  margin-block-end: 0;
+}
+
+  .App-menu ul li{
+    display: inline-block;
+    line-height: 64px;
+    text-align: center;
+    vertical-align: top;
+    min-width: 13%;
+    z-index: 999;
+  }
+  .App-menu ul li:nth-child(7) img{
+    margin: 0 2%;
+    width: 12px;
+  }
+
+  
+  .IndexTitle{
+    font-size: 60px;
+    padding-left: 12vw;
+    padding-top: 6vw;
+    height: 50%;
+    width: 6em;
+  }
+  .PageTitle .engTitle{
+    font-size: 12px;
+  }
+  .PageTitle .zhTitle{
+    font-size: 40px;
+  }
+  .Page2Line2{
+    font-size: 40px;
+    font-weight: 800;
+  }
+}
+
+
+@media screen and (min-width: 1044px) {
+.App-menu{
+  width: 100%;
+}
+  
+.App-menu ul{
+  padding-inline-start: 0;
+  margin-block-start: 12px;
+  margin-block-end: 0;
+}
+
+  .App-menu ul li{
+    display: inline-block;
+    line-height: 64px;
+    text-align: center;
+    vertical-align: top;
+    min-width: 14%;
+    z-index: 999;
+  }
+  .App-menu ul li:nth-child(7) img{
+    margin: 0 4%;
+    width: 18px;
+  }
+
+  
+  .IndexTitle{
+    font-size: 80px;
+    padding-left: 13vw;
+    padding-top: 6vw;
+    height: 50%;
+    width: 6em;
+  }
+
+  .PageTitle .engTitle{
+    font-size: 15px;
+  }
+  .PageTitle .zhTitle{
+    font-size: 50px;
+  }
+}

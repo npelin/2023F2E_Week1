@@ -1,0 +1,221 @@
+@media screen and (min-width: 768px){
+    .Mobile-menu{
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 768px){
+    .App-logoBlock{
+        position: fixed;
+        top: 52px; 
+        height: 2px;
+        width: 100vw;
+        border-bottom: solid #fdd5af 2px;
+        z-index: 99;
+    }
+    .App-logoBlock img{
+        position: fixed;
+        height: 50px;
+        top: 33px;
+        left: 45vw;
+    }
+    .Mobile-menuline {
+        width: 100vw;
+        height: 24px;
+        background: #FFF;
+        cursor: pointer;
+        display: block;
+        padding: 16px;
+        position: fixed;
+        z-index: 2;
+    }
+    .Mobile-menuline .Mobile-menuIcon,
+    .Mobile-menuline .Mobile-menuIcon::before,
+    .Mobile-menuline .Mobile-menuIcon::after {
+        background: #222;
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        transition: background ease .1s, top ease .1s .1s, transform ease .1s;
+        width: 20px;
+    }
+    .Mobile-menuline .Mobile-menuIcon {
+        left: 18px;
+        top: 27px;
+    }
+    
+    .Mobile-menuline .Mobile-menuIcon::before {
+        top: -6px;
+    }
+    
+    .Mobile-menuline .Mobile-menuIcon::after {
+        top: 6px;
+    }
+    /*
+    點選選單變叉叉
+    */
+    #Mobile-menuIcon:checked + .Mobile-menuline .Mobile-menuIcon {
+        background: transparent;
+    }
+    
+    #Mobile-menuIcon:checked + .Mobile-menuline .Mobile-menuIcon::before {
+        transform: rotate(45deg);
+    }
+    
+    #Mobile-menuIcon:checked + .Mobile-menuline .Mobile-menuIcon::after {
+        transform: rotate(-45deg);
+    }
+
+    
+    #Mobile-menuIcon:checked + .Mobile-menuline .Mobile-menuIcon::before,
+    #Mobile-menuIcon:checked + .Mobile-menuline .Mobile-menuIcon::after {
+        top: 0;
+        transition: top ease .1s, transform ease .1s .1s;
+    }
+    
+    /*
+    選單開合
+    */
+    #Mobile-menuIcon:checked ~ .Mobile-menu-list {
+        width: 100%;
+    }
+    
+    .Mobile-menu-list {
+        width: 0;
+        height: 100vh;
+        background: #FFF;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+        padding-top: 60px;
+        position: fixed;
+        z-index: 1;
+        transition: all .1s;
+        overflow: hidden;
+    }
+    /*
+    選單向外推
+    */
+    .Mobile-menu-list ul {
+        list-style: none;
+        margin:25px 0 0 0;
+        padding: 0;
+    }
+    .Mobile-menu-list ul>li{
+        display:block;
+        width:100%;
+        text-align: center;
+        line-height: 3em;
+    }
+    .Mobile-menu-list ul li a{
+        text-decoration: none;
+    }
+    .Mobile-menu-list ul li:nth-child(6) img{
+      margin: 0 2%;
+    }
+    /*
+    隱藏核許框
+    */
+    input#Mobile-menuIcon {
+     display: none;
+    }
+    
+
+    .MobileSpace{
+        height: 55px;
+        width: 100%;
+    }
+  .IndexContent{
+    background-image: url('./MobileIndexContent.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: calc(100vw*1.66);
+  }
+  .IndexTitle{
+    font-size: 50px;
+    padding-left: 8vw;
+    padding-top: 20px;
+    height: 50%;
+    width: 9em;
+    text-align: center;
+    letter-spacing: 0.3em;
+  }
+
+  .IndexContentFish1{
+    position: relative;
+    bottom:  calc(-10vw*6.26);
+    left: 10vw;
+    width: calc(1vw*7.7);
+
+  }
+  .IndexContentFish2{
+    position: relative;
+    bottom: calc(-10vw*6.56);
+    left: 11vw;
+    width: calc(1vw*5.1);
+  }
+
+  .Page2{
+    width: 100%;
+  }
+  .Page2 .Page2Title, .Page2Line2, .Page2Line3, .Page2Text{
+    text-align: center;
+  }
+  .Page2Img{
+    background-image: url('./Mobile_Page2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 15vw;
+    height: calc(160vw*0.36);
+  }
+  .Page2Text{
+    padding: 1em;
+  }
+  
+  
+  .PageTitle .engTitle{
+    font-size: 15px;
+  }
+  .PageTitle .zhTitle{
+    font-size: 40px;
+  }
+  .Page2Line2{
+    font-size: 40px;
+  }
+  .Page3 .engTitle, .Page3 .zhTitle{
+    margin-left: 4vw;
+  }
+  .Page4, .Page5, .Page6{
+    margin: 0 4vw;
+  }
+  
+  .UserNote{
+    padding: 1em 3vw 3em 3vw;
+  }
+  .UserNote .NoteLine{
+    margin: 1em 1em;
+  }
+  .Page6 .PageTitle{
+    text-align: center;
+  }
+  .Page6Desc{
+    text-align: center;
+  }
+  .Page6Line3{
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em 0 0 0;
+  }
+  .Page6Fish1{
+    position: relative;
+    left: 70vw;
+    top: -36px;
+    max-width: 73px;
+  }
+  .Page6Fish2{
+    position: relative;
+    left: 33vw;
+    top: 20px;
+    max-width: 114px;
+  }
+}
